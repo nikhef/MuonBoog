@@ -12,7 +12,7 @@ def asIntArray (s):
 
 if __name__ == "__main__":
 #vanaf hier schrijven we data naar de kosmische boog
-    device = serial.Serial ("/dev/ttyUSB1")  # device zit aangesloten op ttyUSB0
+    device = serial.Serial ("/dev/ttyUSB0")  # device zit aangesloten op ttyUSB0
     device.write ("\x99\x20\x0b\x66")        # Stuurt het startbit
     print 'Set threshold 1'
     device.write ("\x99\x16\x05\x66")        # Hier stelt u threshold 1 in
